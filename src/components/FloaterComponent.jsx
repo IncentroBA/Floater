@@ -1,4 +1,4 @@
-import React, { useState, createElement } from "react";
+import { createElement } from "react";
 import Floater from "react-floater";
 
 export function FloaterComponent(props) {

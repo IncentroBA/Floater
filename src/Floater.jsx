@@ -1,7 +1,6 @@
 import { Component, createElement } from "react";
 import { FloaterComponent } from "./components/FloaterComponent";
 import { FloaterControlledComponent } from "./components/FloaterControlledComponent";
-import "./ui/Floater.css";
 
 export default class Floater extends Component {
     render() {
@@ -31,9 +30,8 @@ export default class Floater extends Component {
               }
             : {};
 
-        let floater;
         if (hover) {
-            floater = (
+            return (
                 <FloaterControlledComponent
                     target={this.props.target}
                     content={this.props.content}
@@ -49,7 +47,7 @@ export default class Floater extends Component {
                 />
             );
         } else {
-            floater = (
+            return (
                 <FloaterComponent
                     target={this.props.target}
                     content={this.props.content}
@@ -65,6 +63,5 @@ export default class Floater extends Component {
                 />
             );
         }
-        return floater;
     }
 }
