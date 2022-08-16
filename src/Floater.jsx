@@ -8,7 +8,8 @@ export default class Floater extends Component {
         const noStyles = this.props.noStyles
             ? {
                   floater: {
-                      filter: "none"
+                      filter: "none",
+                      zIndex: 200
                   },
                   container: {
                       backgroundColor: "transparent",
@@ -26,9 +27,16 @@ export default class Floater extends Component {
                       length: 0,
                       margin: 0,
                       spread: 0
+                  },
+                  wrapper: {
+                      cursor: "pointer"
                   }
               }
-            : {};
+            : {
+                  floater: {
+                      zIndex: 200
+                  }
+              };
 
         if (hover) {
             return (

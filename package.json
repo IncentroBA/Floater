@@ -1,7 +1,7 @@
 {
     "name": "floater",
     "widgetName": "Floater",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A component to create awesome tooltips, modals and more!",
     "copyright": "Incentro 2021",
     "author": "Incentro",

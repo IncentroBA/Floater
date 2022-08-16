@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "6f2b6f6f0d9a5b28c26a";
+/******/ 	var hotCurrentHash = "316c518d87ae62a772a2";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -6149,7 +6149,8 @@ var Floater = /*#__PURE__*/function (_Component) {
       var hover = this.props.event == "hover" ? true : false;
       var noStyles = this.props.noStyles ? {
         floater: {
-          filter: "none"
+          filter: "none",
+          zIndex: 900
         },
         container: {
           backgroundColor: "transparent",
@@ -6167,8 +6168,15 @@ var Floater = /*#__PURE__*/function (_Component) {
           length: 0,
           margin: 0,
           spread: 0
+        },
+        wrapper: {
+          cursor: "pointer"
         }
-      } : {};
+      } : {
+        floater: {
+          zIndex: 900
+        }
+      };
 
       if (hover) {
         return /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_components_FloaterControlledComponent__WEBPACK_IMPORTED_MODULE_2__["FloaterControlledComponent"], {

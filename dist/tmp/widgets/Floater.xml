@@ -28,7 +28,7 @@
             </property>
             <property key="noStyles" type="boolean" defaultValue="false" required="true">
                 <caption>No Styling</caption>
-                <description>Make Floater transparent and create a custom Floater within your scss files.</description>
+                <description>Make Floater transparent, letting you create a custom Floater within your scss files.</description>
             </property>
             <property key="autoOpen" type="boolean" defaultValue="false" required="true">
                 <caption>Auto Open</caption>
@@ -64,7 +64,7 @@
             </property>
             <property key="showCloseButton" type="boolean" defaultValue="false" required="true">
                 <caption>Show Close Button</caption>
-                <description>It will show a ⨉ button to close the Floater.</description>
+                <description>Display a ⨉ button to close the Floater.</description>
             </property>
         </propertyGroup>
     </properties>
